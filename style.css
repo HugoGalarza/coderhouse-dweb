@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-color: #191919;font-family: Arial, Helvetica, sans-serif;text-align: center;}
+header nav ul li a 
+{
+    text-decoration: none!important;
+    color: white!important;
+}
+
+footer{background-color: #f10496; color: white;text-align: center;}
+
+h1{color: white;text-align: center; margin: 1%}
+
+p{color: white;text-align: center; margin: 1%; margin-top: 1%;}
+
+
+.inicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.fliyer-x
+{
+    width: 62%
+}
