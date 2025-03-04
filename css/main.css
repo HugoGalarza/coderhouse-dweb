@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+header nav ul li a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+footer {
+  background-color: #f10496;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 1%;
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin: 1%;
+  margin-top: 1%;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inicio img {
+  width: 100%; /* Las imágenes ocupan todo el ancho de su celda */
+  height: auto; /* La altura se ajusta proporcionalmente */
+  object-fit: cover; /* Recorta y ajusta las imágenes para que llenen la celda */
+}
+
+.fliyer-x {
+  width: 62%;
+}
+
+.fliyer-instagram {
+  width: 40%;
+}
+
+.quienes-somos .contenido {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.quienes-somos .texto {
+  flex: 1; /* El texto ocupa el espacio restante */
+  padding-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.quienes-somos img {
+  max-width: 380px; /* Ajusta el ancho máximo de la imagen */
+  height: auto;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.service h2 {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+/*# sourceMappingURL=main.css.map */
