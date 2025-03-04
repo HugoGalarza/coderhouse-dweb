@@ -17,7 +17,7 @@ h1{color: white;text-align: center; margin: 1%}
 
 p{color: white;text-align: center; margin: 1%; margin-top: 1%;}
 
-.inicio{
+.inicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -26,11 +26,36 @@ p{color: white;text-align: center; margin: 1%; margin-top: 1%;}
     margin: 0 auto;
 }
 
-.inicio img{
-    width: 100%; /* Las imágenes ocupan todo el ancho de su celda */
-  height: auto; /* La altura se ajusta proporcionalmente */
-  object-fit: cover; /* Recorta y ajusta las imágenes para que llenen la celda */
+.inicio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+
+@media (max-width: 768px) {
+    .inicio {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+    }
+
+    .inicio img {
+        max-width: 80%; 
+        margin: 10px auto; 
+        display: block; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .inicio img {
+        max-width: 90%; 
+    }
+}
+
+
+
+
 .fliyer-x
 {
     width: 62%
@@ -41,20 +66,50 @@ p{color: white;text-align: center; margin: 1%; margin-top: 1%;}
     width: 40%
 }
 
+
 .quienes-somos .contenido {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
 }
 
 .quienes-somos .texto {
-    flex: 1; /* El texto ocupa el espacio restante */
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    flex: 1;
+    padding-right: 20px;
 }
 
 .quienes-somos img {
-    max-width: 380px; /* Ajusta el ancho máximo de la imagen */
+    max-width: 380px;
     height: auto;
 }
+
+
+@media (max-width: 768px) {
+    .quienes-somos .contenido {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .quienes-somos .texto {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .quienes-somos img {
+        max-width: 100%;
+        display: block; 
+        margin: 0 auto; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .quienes-somos img {
+        max-width: 90%;
+    }
+}
+
+
 
 .services {
     display: flex;
@@ -81,3 +136,4 @@ p{color: white;text-align: center; margin: 1%; margin-top: 1%;}
     text-decoration: none!important;
     color: white!important;
 }
+
